@@ -26,7 +26,7 @@ function addProduct() {
         name: productName.value,
         price: productPrice.value,
         category: productCategory.value,
-        desc: productDesc.value,
+        desc: productDesc.value
      }
     productContainer.push(product)
     localStorage.setItem('myProuducts',JSON.stringify(productContainer) ) 
@@ -39,10 +39,10 @@ function addProduct() {
     
 function clearForm() {
 
-    productName.value=""
-    productPrice.value=""
-    productCategory.value=""
-    productDesc.value=""
+    productName.value="";
+    productPrice.value="";
+    productCategory.value="";
+    productDesc.value="";
 }
 
 function displayProducts(productList)
@@ -62,7 +62,7 @@ function displayProducts(productList)
       
         </tr>`
     }
-     document.getElementById('tableBody').innerHTML =cartoona;
+     tableBody.innerHTML =cartoona;
 
 }
 
