@@ -19,10 +19,10 @@
     <h3 class="py-3">Product Management System</h3>
 
     <label for="productName">productName : </label>
-    <input type="text" class="form-control mb-2" id="productName">
+    <input type="text" oninput="validateProductName()" class="form-control mb-2" id="productName">
 
     <label for="productPrice">productPrice : </label>
-    <input type="number" class="form-control mb-2" id="productPrice">
+    <input type="number" oninput="validateProductPrice()" class="form-control mb-2" id="productPrice">
 
     <label for="productCategory">productCategory : </label>
     <input type="text" class="form-control mb-2" id="productCategory">
@@ -30,7 +30,7 @@
     <label for="productDesc">productDesc : </label>
     <textarea type="text" class="form-control mb-2" id="productDesc"></textarea>
   
-<button onclick="addProduct(); " class="btn  btn-outline-info">add Product</button>
+<button onclick="add(); " class="btn  btn-outline-info">add Product</button>
   </div>
 
 
